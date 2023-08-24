@@ -13,3 +13,4 @@ Checkmarx Software Composition Analysis (Checkmarx SCA) is another component of 
 ## GitHub Integration
 Checkmarx CxSAST supports GitHub Integration enabling the identification of new vulnerabilities with proximity to their creation.
 
+This repository reference to Checkmarx Documentation https://checkmarx.com/resource/documents/en/34965-8208-github-integration.html
