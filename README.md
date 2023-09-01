@@ -83,3 +83,8 @@ CxFlow is an open-source project written and maintained by Checkmarx. For access
     - Rename the file to `cx-flow.jar` use this command:
         
             sudo mv cx-flow-1.6.41.jar cx-flow.jar
+
+## CI/CD Variables
+To allow for easy configuration, it is necessary to create environment variables with GitLab to run the integration. For more information on GitLab CI/CD variables, visit here: GitLab: [CI/CD - Environment Variables](https://checkmarx.com/resource/documents/en/34965-8218-gitlab-integration.html).
+
+Edit the CI/CD variables under `Settings` → `CI/CD` → `Variables` and add the following variables for a CxSAST and/or CxSCA scan:
