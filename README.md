@@ -47,12 +47,11 @@ CxFlow is an open-source project written and maintained by Checkmarx. For access
 
     Java and the JVM (Java’s virtual machine) are required for many kinds of software, including Tomcat, Jetty, Glassfish, Cassandra, and Jenkins. Java comes with two main components. The JDK provides essential software tools to develop in Java, such as a compiler and debugger. JRE is used to execute Java programs.
 
-    - To install the OpenJDK version of Java, first update your `apt` package index
-
-        ```
-        sudo apt update
-        sudo apt install default-jdk
-        ```
+    - To install the OpenJDK version of Java, first update your `apt` package index. Then, check if Java is already installed:
+    
+            sudo apt update
+            java -version
+    
     - Verify the installation this command
     
             java --version
