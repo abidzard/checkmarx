@@ -16,6 +16,45 @@ Checkmarx Software Composition Analysis (Checkmarx SCA) is another component of 
 
 GitLab is a web-based DevOps life cycle tool that provides a Git-repository manager providing wiki, issue-tracking and continuous integration/continuous deployment pipeline features. GitLab offers the ability to automate the entire DevOps life cycle from planning to creation, build, verify, security testing, deploying, and monitoring offering high availability and replication, and scalability and available for using on-prem or cloud storage. In this documentation we focused on GitLab on Premise.
 
-This repository reference to Checkmarx Documentation https://checkmarx.com/resource/documents/en/34965-8218-gitlab-integration.html
+## CxFlow Overview
 
-[def]: https://github.com/abidzard/checkmarx/blob/main/CxLogo.png?raw=true
+CxFlow is a Spring Boot application written by Checkmarx that enables initiations of scans and result orchestration. It is the main automation driving the GitLab and Checkmarx integration. Some features of CxFlow include:
+
+- Automated project creation
+- Facilitates feedback channels in a closed loop nature.
+    - Channels include GitLab Issues, GitLab Merge Requests, JIRA, Rally, and ServiceNow.
+ - Enables customers to incorporate Checkmarx into their DevOps/Release pipelines as early as possible.
+- Controls the “breaking” of builds.
+
+CxFlow is an open-source project written and maintained by Checkmarx. For access to CxFlow’s Wiki, please refer to [CxFlow Wiki](https://github.com/checkmarx-ltd/cx-flow/wiki)
+
+> This repository reference to Checkmarx [Documentation](https://checkmarx.com/resource/documents/en/34965-8218-gitlab-integration.html).
+
+## Pre-requisites
+- GitLab on Premise 
+
+    To install GitLab on Premise please refer to [GitLab Installation](https://about.gitlab.com/install/)
+
+- GitLab Runner
+
+    ![GitLabRunner](img/gitlab-runner.png?raw=true)
+
+    Runners are processes that pick up and execute CI/CD jobs for GitLab. [What is GitLab Runner?](https://docs.gitlab.com/runner/)
+
+    To install GitLab Runner please refer to [GitLab Runner Installation](https://docs.gitlab.com/runner/install/)
+
+- Java
+
+    Java and the JVM (Java’s virtual machine) are required for many kinds of software, including Tomcat, Jetty, Glassfish, Cassandra, and Jenkins. Java comes with two main components. The JDK provides essential software tools to develop in Java, such as a compiler and debugger. JRE is used to execute Java programs.
+
+    - To install the OpenJDK version of Java, first update your `apt` package index
+
+        ```
+        sudo apt update
+        sudo apt install default-jdk
+        ```
+    - Verify the installation this command
+    
+            java -version
+            
+        ![JavaVersion](img/java-v.png?raw=true)
