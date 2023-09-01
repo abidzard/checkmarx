@@ -1,6 +1,6 @@
 # Checkmarx
 
-![Checkmarx_Logo][img/CxLogo.png "Checkmarx"]
+![CxLogo][img/CxLogo.png]
 
 Checkmarx is a comprehensive application security platform designed to identify, manage, and mitigate security risks within software applications. It offers a range of tools and solutions to help organizations enhance the security of their software development lifecycle.
 
